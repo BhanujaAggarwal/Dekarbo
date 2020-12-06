@@ -1,0 +1,47 @@
+.about{
+    height: 86vh;
+    background-color: white;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.green{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/greenRectangle.png);
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.AboutUs-h1{
+    color: white;
+}
+
+.imgg{
+    top:74vh;
+    left:8vw;
+    position: absolute;
+    width: 137px;
+    height: 22px;
+}
+.imgg1{
+    top:79vh;
+    left:4vw;
+    position: absolute;
+    width: 39.5vw;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+}
+.imgg2{
+    top:84vh;
+    left:4vw;
+    position: absolute;
+    width: 238px;
+    height: 79px;
+}

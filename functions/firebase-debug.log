@@ -1,0 +1,157 @@
+[debug] [2020-11-03T08:22:10.276Z] ----------------------------------------------------------------------
+[debug] [2020-11-03T08:22:10.279Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2020-11-03T08:22:10.280Z] CLI Version:   8.12.0
+[debug] [2020-11-03T08:22:10.280Z] Platform:      linux
+[debug] [2020-11-03T08:22:10.280Z] Node Version:  v12.9.1
+[debug] [2020-11-03T08:22:10.281Z] Time:          Tue Nov 03 2020 13:52:10 GMT+0530 (India Standard Time)
+[debug] [2020-11-03T08:22:10.281Z] ----------------------------------------------------------------------
+[debug] [2020-11-03T08:22:10.281Z] 
+[debug] [2020-11-03T08:22:10.294Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-03T08:22:10.295Z] > authorizing via signed-in user
+[debug] [2020-11-03T08:22:10.295Z] [iam] checking project purify-289711 for permissions ["firebase.projects.get"]
+[debug] [2020-11-03T08:22:10.301Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/purify-289711:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-03T08:22:18.747Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 03 Nov 2020 08:22:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1297","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "10" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"12\""}}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to path/to/key.json. Non-emulated services will access production using these credentials. Be careful! {"metadata":{"emulator":{"name":"functions"},"message":"Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to path/to/key.json. Non-emulated services will access production using these credentials. Be careful!"}}
+[debug] [2020-11-03T08:22:18.783Z] [functions] Watching "/home/ushita/Desktop/batch--11-purify/functions" for Cloud Functions...
+[debug] [2020-11-03T08:22:18.794Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-03T08:22:18.794Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-03T08:22:18.794Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-03T08:22:18.795Z] DEBUG: [worker-~diagnostic~-ec620577-a99a-4ea9-a583-f12b6874d66a]: Assigning socketPath: /tmp/fire_emu_19580.sock
+[debug] [2020-11-03T08:22:18.795Z] DEBUG: [worker-~diagnostic~-ec620577-a99a-4ea9-a583-f12b6874d66a]: BUSY
+[debug] [2020-11-03T08:22:18.989Z] DEBUG: [runtime-status] [19580] Functions runtime initialized. {"cwd":"/home/ushita/Desktop/batch--11-purify/functions","node_version":"12.9.1"}
+[debug] [2020-11-03T08:22:18.990Z] DEBUG: [runtime-status] [19580] Disabled runtime features: undefined
+[debug] [2020-11-03T08:22:18.991Z] DEBUG: [runtime-status] [19580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-11-03T08:22:18.992Z] DEBUG: [runtime-status] [19580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:22:18.992Z] DEBUG: [runtime-status] [19580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:22:18.994Z] DEBUG: [runtime-status] [19580] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-03T08:22:18.995Z] DEBUG: [runtime-status] [19580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:22:19.191Z] DEBUG: [runtime-status] [19580] Checked functions.config() {"config":{}}
+[debug] [2020-11-03T08:22:19.191Z] DEBUG: [runtime-status] [19580] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-11-03T08:22:19.192Z] DEBUG: [runtime-status] [19580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:22:19.193Z] DEBUG: [runtime-status] [19580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-11-03T08:22:19.193Z] DEBUG: [runtime-status] [19580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:22:19.194Z] DEBUG: [runtime-status] [19580] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  Error: Failed to read credentials from file path/to/key.json: Error: ENOENT: no such file or directory, open 'path/to/key.json'
+    at FirebaseAppError.FirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:42:28)
+    at FirebaseAppError.PrefixedFirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:88:28)
+    at new FirebaseAppError (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:123:28)
+    at readCredentialFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:383:15)
+    at credentialFromFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:362:27)
+    at Object.getApplicationDefault (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:281:16)
+    at new FirebaseApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-app.js:194:53)
+    at FirebaseNamespaceInternals.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:80:19)
+    at FirebaseNamespace.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:442:30)
+    at Proxy.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:330:78) {"metadata":{"emulator":{"name":"functions"},"message":"Error: Failed to read credentials from file path/to/key.json: Error: ENOENT: no such file or directory, open 'path/to/key.json'\n    at FirebaseAppError.FirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:42:28)\n    at FirebaseAppError.PrefixedFirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:88:28)\n    at new FirebaseAppError (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:123:28)\n    at readCredentialFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:383:15)\n    at credentialFromFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:362:27)\n    at Object.getApplicationDefault (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:281:16)\n    at new FirebaseApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-app.js:194:53)\n    at FirebaseNamespaceInternals.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:80:19)\n    at FirebaseNamespace.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:442:30)\n    at Proxy.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:330:78)"}}
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this. {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-03T08:22:19.480Z] DEBUG: [worker-~diagnostic~-ec620577-a99a-4ea9-a583-f12b6874d66a]: exited
+[debug] [2020-11-03T08:22:19.481Z] DEBUG: [worker-~diagnostic~-ec620577-a99a-4ea9-a583-f12b6874d66a]: FINISHED
+[debug] [2020-11-03T08:38:27.266Z] ----------------------------------------------------------------------
+[debug] [2020-11-03T08:38:27.279Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2020-11-03T08:38:27.280Z] CLI Version:   8.12.0
+[debug] [2020-11-03T08:38:27.281Z] Platform:      linux
+[debug] [2020-11-03T08:38:27.281Z] Node Version:  v12.9.1
+[debug] [2020-11-03T08:38:27.282Z] Time:          Tue Nov 03 2020 14:08:27 GMT+0530 (India Standard Time)
+[debug] [2020-11-03T08:38:27.283Z] ----------------------------------------------------------------------
+[debug] [2020-11-03T08:38:27.283Z] 
+[debug] [2020-11-03T08:38:27.332Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-03T08:38:27.333Z] > authorizing via signed-in user
+[debug] [2020-11-03T08:38:27.334Z] [iam] checking project purify-289711 for permissions ["firebase.projects.get"]
+[debug] [2020-11-03T08:38:27.347Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/purify-289711:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-03T08:38:30.636Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 03 Nov 2020 08:38:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1295","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "10" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"12\""}}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to path/to/key.json. Non-emulated services will access production using these credentials. Be careful! {"metadata":{"emulator":{"name":"functions"},"message":"Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to path/to/key.json. Non-emulated services will access production using these credentials. Be careful!"}}
+[debug] [2020-11-03T08:38:30.813Z] [functions] Watching "/home/ushita/Desktop/batch--11-purify/functions" for Cloud Functions...
+[debug] [2020-11-03T08:38:30.858Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-03T08:38:30.859Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-03T08:38:30.860Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-03T08:38:30.861Z] DEBUG: [worker-~diagnostic~-f2157f17-a3de-426b-a0a3-15ab58b45850]: Assigning socketPath: /tmp/fire_emu_21035.sock
+[debug] [2020-11-03T08:38:30.863Z] DEBUG: [worker-~diagnostic~-f2157f17-a3de-426b-a0a3-15ab58b45850]: BUSY
+[debug] [2020-11-03T08:38:33.921Z] DEBUG: [runtime-status] [21035] Functions runtime initialized. {"cwd":"/home/ushita/Desktop/batch--11-purify/functions","node_version":"12.9.1"}
+[debug] [2020-11-03T08:38:33.925Z] DEBUG: [runtime-status] [21035] Disabled runtime features: undefined
+[debug] [2020-11-03T08:38:33.952Z] DEBUG: [runtime-status] [21035] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-11-03T08:38:33.991Z] DEBUG: [runtime-status] [21035] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:38:33.995Z] DEBUG: [runtime-status] [21035] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:38:34.002Z] DEBUG: [runtime-status] [21035] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-03T08:38:34.005Z] DEBUG: [runtime-status] [21035] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:38:34.621Z] DEBUG: [runtime-status] [21035] Checked functions.config() {"config":{}}
+[debug] [2020-11-03T08:38:34.622Z] DEBUG: [runtime-status] [21035] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-11-03T08:38:34.626Z] DEBUG: [runtime-status] [21035] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:38:34.636Z] DEBUG: [runtime-status] [21035] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-11-03T08:38:34.636Z] DEBUG: [runtime-status] [21035] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:38:34.636Z] DEBUG: [runtime-status] [21035] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  Error: Failed to read credentials from file path/to/key.json: Error: ENOENT: no such file or directory, open 'path/to/key.json'
+    at FirebaseAppError.FirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:42:28)
+    at FirebaseAppError.PrefixedFirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:88:28)
+    at new FirebaseAppError (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:123:28)
+    at readCredentialFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:383:15)
+    at credentialFromFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:362:27)
+    at Object.getApplicationDefault (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:281:16)
+    at new FirebaseApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-app.js:194:53)
+    at FirebaseNamespaceInternals.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:80:19)
+    at FirebaseNamespace.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:442:30)
+    at Proxy.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:330:78) {"metadata":{"emulator":{"name":"functions"},"message":"Error: Failed to read credentials from file path/to/key.json: Error: ENOENT: no such file or directory, open 'path/to/key.json'\n    at FirebaseAppError.FirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:42:28)\n    at FirebaseAppError.PrefixedFirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:88:28)\n    at new FirebaseAppError (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:123:28)\n    at readCredentialFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:383:15)\n    at credentialFromFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:362:27)\n    at Object.getApplicationDefault (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:281:16)\n    at new FirebaseApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-app.js:194:53)\n    at FirebaseNamespaceInternals.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:80:19)\n    at FirebaseNamespace.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:442:30)\n    at Proxy.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:330:78)"}}
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this. {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-03T08:38:35.212Z] DEBUG: [worker-~diagnostic~-f2157f17-a3de-426b-a0a3-15ab58b45850]: exited
+[debug] [2020-11-03T08:38:35.212Z] DEBUG: [worker-~diagnostic~-f2157f17-a3de-426b-a0a3-15ab58b45850]: FINISHED
+[debug] [2020-11-03T08:51:21.639Z] ----------------------------------------------------------------------
+[debug] [2020-11-03T08:51:21.648Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2020-11-03T08:51:21.650Z] CLI Version:   8.12.0
+[debug] [2020-11-03T08:51:21.651Z] Platform:      linux
+[debug] [2020-11-03T08:51:21.651Z] Node Version:  v12.9.1
+[debug] [2020-11-03T08:51:21.652Z] Time:          Tue Nov 03 2020 14:21:21 GMT+0530 (India Standard Time)
+[debug] [2020-11-03T08:51:21.652Z] ----------------------------------------------------------------------
+[debug] [2020-11-03T08:51:21.653Z] 
+[debug] [2020-11-03T08:51:21.668Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-03T08:51:21.669Z] > authorizing via signed-in user
+[debug] [2020-11-03T08:51:21.669Z] [iam] checking project purify-289711 for permissions ["firebase.projects.get"]
+[debug] [2020-11-03T08:51:21.673Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-03T08:51:21.673Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-03T08:51:22.042Z] <<< HTTP RESPONSE 200 {"date":"Tue, 03 Nov 2020 08:51:22 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-03T08:51:23.102Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/purify-289711:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-03T08:51:24.631Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 03 Nov 2020 08:51:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1293","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "10" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"12\""}}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Desktop/batch--11-purify/public/key.json. Non-emulated services will access production using these credentials. Be careful! {"metadata":{"emulator":{"name":"functions"},"message":"Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Desktop/batch--11-purify/public/key.json. Non-emulated services will access production using these credentials. Be careful!"}}
+[debug] [2020-11-03T08:51:24.656Z] [functions] Watching "/home/ushita/Desktop/batch--11-purify/functions" for Cloud Functions...
+[debug] [2020-11-03T08:51:24.672Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-11-03T08:51:24.673Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-11-03T08:51:24.673Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-11-03T08:51:24.673Z] DEBUG: [worker-~diagnostic~-3a0f8964-eff1-4a23-ba28-dabba19aefeb]: Assigning socketPath: /tmp/fire_emu_22562.sock
+[debug] [2020-11-03T08:51:24.673Z] DEBUG: [worker-~diagnostic~-3a0f8964-eff1-4a23-ba28-dabba19aefeb]: BUSY
+[debug] [2020-11-03T08:51:24.938Z] DEBUG: [runtime-status] [22562] Functions runtime initialized. {"cwd":"/home/ushita/Desktop/batch--11-purify/functions","node_version":"12.9.1"}
+[debug] [2020-11-03T08:51:24.940Z] DEBUG: [runtime-status] [22562] Disabled runtime features: undefined
+[debug] [2020-11-03T08:51:24.941Z] DEBUG: [runtime-status] [22562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-11-03T08:51:24.943Z] DEBUG: [runtime-status] [22562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:51:24.944Z] DEBUG: [runtime-status] [22562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:51:24.947Z] DEBUG: [runtime-status] [22562] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-11-03T08:51:24.949Z] DEBUG: [runtime-status] [22562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:51:25.060Z] DEBUG: [runtime-status] [22562] Checked functions.config() {"config":{}}
+[debug] [2020-11-03T08:51:25.062Z] DEBUG: [runtime-status] [22562] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-11-03T08:51:25.065Z] DEBUG: [runtime-status] [22562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:51:25.067Z] DEBUG: [runtime-status] [22562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-11-03T08:51:25.069Z] DEBUG: [runtime-status] [22562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.11.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-11-03T08:51:25.069Z] DEBUG: [runtime-status] [22562] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  Error: Failed to read credentials from file /Desktop/batch--11-purify/public/key.json: Error: ENOENT: no such file or directory, open '/Desktop/batch--11-purify/public/key.json'
+    at FirebaseAppError.FirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:42:28)
+    at FirebaseAppError.PrefixedFirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:88:28)
+    at new FirebaseAppError (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:123:28)
+    at readCredentialFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:383:15)
+    at credentialFromFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:362:27)
+    at Object.getApplicationDefault (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:281:16)
+    at new FirebaseApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-app.js:194:53)
+    at FirebaseNamespaceInternals.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:80:19)
+    at FirebaseNamespace.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:442:30)
+    at Proxy.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:330:78) {"metadata":{"emulator":{"name":"functions"},"message":"Error: Failed to read credentials from file /Desktop/batch--11-purify/public/key.json: Error: ENOENT: no such file or directory, open '/Desktop/batch--11-purify/public/key.json'\n    at FirebaseAppError.FirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:42:28)\n    at FirebaseAppError.PrefixedFirebaseError [as constructor] (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:88:28)\n    at new FirebaseAppError (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/utils/error.js:123:28)\n    at readCredentialFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:383:15)\n    at credentialFromFile (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:362:27)\n    at Object.getApplicationDefault (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/auth/credential.js:281:16)\n    at new FirebaseApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-app.js:194:53)\n    at FirebaseNamespaceInternals.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:80:19)\n    at FirebaseNamespace.initializeApp (/home/ushita/Desktop/batch--11-purify/functions/node_modules/firebase-admin/lib/firebase-namespace.js:442:30)\n    at Proxy.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:330:78)"}}
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this. {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-11-03T08:51:25.185Z] DEBUG: [worker-~diagnostic~-3a0f8964-eff1-4a23-ba28-dabba19aefeb]: exited
+[debug] [2020-11-03T08:51:25.185Z] DEBUG: [worker-~diagnostic~-3a0f8964-eff1-4a23-ba28-dabba19aefeb]: FINISHED
